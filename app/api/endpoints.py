@@ -14,15 +14,11 @@ import logging
 router = APIRouter()
 logger = logging.getLogger(__name__)
 
-api_key_header = APIKeyHeader(name="X-API-Key")
+# Autenticação X-API-Key desativada — auto_error=False evita 403 quando o header está ausente.
+api_key_header = APIKeyHeader(name="X-API-Key", auto_error=False)
 
 async def verify_api_key(api_key: str = Depends(api_key_header)):
-    if api_key != settings.api_key:
-        logger.warning("event=auth_failed reason='Invalid API Key provided'")
-        raise HTTPException(
-            status_code=403,
-            detail="Could not validate credentials"
-        )
+    # Verificação desativada: endpoints são públicos. O header é ignorado se enviado.
     return api_key
 
 class ChatRequest(BaseModel):

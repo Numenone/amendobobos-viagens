@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blis AI - Painel de Atendimento</title>
+    <title>Amendobobo Viagens - Painel de Atendimento</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -350,7 +350,7 @@
         <header>
             <div class="avatar">B</div>
             <div class="header-info">
-                <h1>Blis AI Assistant</h1>
+                <h1>Amendobobo Viagens Assistant</h1>
                 <p>Agente de Viagens (Online)</p>
             </div>
             <div class="settings-toggle" onclick="toggleDocuments()" title="Gerenciar Documentos"
@@ -406,13 +406,13 @@
             <!-- Initial message -->
             <div class="message ai">
                 <div class="markdown-content">
-                    <p>Olá! Sou o assistente da Blis AI. Como posso ajudar com sua viagem hoje?</p>
+                    <p>Olá! Sou o assistente da Amendobobo Viagens. Como posso ajudar com sua viagem hoje?</p>
                 </div>
                 <div class="time">12:00</div>
             </div>
         </main>
 
-        <div id="typing-indicator" class="typing" style="padding: 0 20px;">Blis AI está escrevendo...</div>
+        <div id="typing-indicator" class="typing" style="padding: 0 20px;">Amendobobo Viagens está escrevendo...</div>
 
         <footer>
             <button id="upload-btn" onclick="document.getElementById('file-input').click()"
@@ -485,7 +485,7 @@
             headerIds: false
         });
 
-        let apiKey = localStorage.getItem('chat-api-key') || '';
+        let apiKey = localStorage.getItem('chat-api-key') || 'disabled'; // Auth X-API-Key desativada
         const chatWindow = document.getElementById('chat-window');
         const messageInput = document.getElementById('message-input');
         const typingIndicator = document.getElementById('typing-indicator');

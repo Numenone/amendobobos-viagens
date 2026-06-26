@@ -162,7 +162,7 @@ def test_rag_unsupported_type(client):
 def test_orchestrator_routing_logic(client):
     """19. Internal Logic: Orchestrator routing without mocks (calling actual logic)."""
     # Simply triggering the graph flow without mocking orchestrator internals
-    payload = {"session_id": "route_test", "message": "O que é o Blis AI?"}
+    payload = {"session_id": "route_test", "message": "O que é a Amendobobo Viagens?"}
     response = client.post("/chat", json=payload, headers=HEADERS)
     assert response.status_code == 200
 

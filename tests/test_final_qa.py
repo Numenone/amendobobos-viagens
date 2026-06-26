@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 async def run_qa():
-    print("🚀 Starting Final General QA for Blis AI...")
+    print("🚀 Starting Final General QA for Amendobobo Viagens...")
     
     memory = MemorySaver()
     graph = get_graph(checkpointer=memory)

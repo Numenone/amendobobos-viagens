@@ -1,4 +1,4 @@
-# BLIS AI - Manual de Políticas de Viagem
+# AMENDOBOBO VIAGENS - Manual de Políticas de Viagem
 ## Guia Completo para Agências e Passageiros
 **Versão 2.1 — Janeiro de 2025 | Uso interno e para parceiros credenciados**
 

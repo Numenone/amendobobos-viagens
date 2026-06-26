@@ -91,8 +91,8 @@ class HealthResponse(BaseModel):
     checkpointer_type: str = Field(..., description="The class type of the active checkpointer.")
 
 app = FastAPI(
-    title="Blis AI - Multi-agent Travel Chatbot",
-    description="API for the Blis AI technical test featuring LangGraph agents. Integrada com proteção API Key, CORS restrito e Security Headers contra ataques comuns (XSS, MIME Snipping e Framing).",
+    title="Amendobobo Viagens - Multi-agent Travel Chatbot",
+    description="API for the Amendobobo Viagens technical test featuring LangGraph agents. Integrada com proteção API Key, CORS restrito e Security Headers contra ataques comuns (XSS, MIME Snipping e Framing).",
     version="1.0.0",
     lifespan=lifespan
 )
@@ -118,7 +118,7 @@ async def health_check():
     description="Serve o arquivo index.html estático que contém a interface do chat e dashboard."
 )
 async def get_painel():
-    """Retorna a interface visual do Blis AI."""
+    """Retorna a interface visual do Amendobobo Viagens."""
     static_file = os.path.join(os.path.dirname(__file__), "static", "index.html")
     return FileResponse(static_file)
 

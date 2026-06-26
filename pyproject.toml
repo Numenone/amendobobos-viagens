@@ -1,7 +1,7 @@
 [project]
-name = "blis-ai-technical-test"
+name = "amendobobo-viagens-technical-test"
 version = "0.1.0"
-description = "Technical test for Blis AI - Multi-agent Travel Chatbot"
+description = "Technical test for Amendobobo Viagens - Multi-agent Travel Chatbot"
 authors = [
     { name = "Your Name", email = "your.email@example.com" }
 ]
